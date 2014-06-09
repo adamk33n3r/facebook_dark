@@ -1,0 +1,268 @@
+$bg-color: #080808
+$bg-color: grey
+$titlebar-color: black
+$chat-titlebar-color: #333333
+$convo-color: grey
+$recieved-color: #333333
+$sent-color: #444444
+$textbox-color: #555555
+$buddie-color: black
+
+*
+  color: #eee !important
+
+body
+  background-color: $bg-color !important
+
+#blueBar
+  background: none !important
+  background-color: $titlebar-color !important
+  &:after
+    background: none !important
+
+div#mainContainer
+  border-right: 1px solid #eee !important
+
+div#contentCol
+  background: none !important
+  background-color: $bg-color !important
+  // This is breaking post pages. Pushes the post down for some reason
+  // I don't remember why I did it in the first place
+  // border-left: 1px solid #eee !important;
+
+//********** Conversations **********/
+// Idk
+.fbNubFlyoutInner
+  background: none !important
+
+// Chat title
+._5q5b .fbNubFlyoutTitlebar
+  background: none !important
+  background-color: $chat-titlebar-color !important
+  border: 1px solid darken($chat-titlebar-color, 10%) !important
+  &:hover
+    background-color: darken($chat-titlebar-color, 5%) !important
+
+// Chat title when flashing
+._5q5b ._50mz.highlightTitle .fbNubFlyoutTitlebar
+  background-color: lighten($chat-titlebar-color, 10%) !important
+
+// Scroll down for new message 
+.fbNubFlyoutHeader > div
+  background-color: #444 !important
+  > div
+    background-color: #444 !important
+
+.fbNubFlyoutBody
+  border-color: black !important
+
+.fbNubButton:hover
+  -webkit-filter: brightness(0.85)
+
+// Sides of minimized chats
+._5q5b .highlightTab .fbNubButton:before, ._5q5b .highlightTab .fbNubButton:after
+  -webkit-filter: grayscale(1) brightness(0.44)
+// Sides of minimized chats when hover
+._5q5b .highlightTab .fbNubButton:hover:before, ._5q5b .highlightTab .fbNubButton:hover:after
+  -webkit-filter: grayscale(1) brightness(0.51)
+
+.fbNubButton
+  background: none !important
+  background-color: $chat-titlebar-color !important
+  -webkit-background-clip: padding-box !important
+  border-top: 1px solid rgba(51, 51, 51, 0.5) !important
+
+.fbNubButton
+  &:before, &:after
+    -webkit-filter: grayscale(1) brightness(0.21)
+
+table.conversationContainer
+  background: none !important
+  background-color: $convo-color !important
+
+._51lq a.profileLink:after
+  // Typing profile pic
+  -webkit-filter: brightness(0.55)
+  border-radius: 3px
+
+.conversation > div
+  > div._5w-5
+    //-webkit-filter: brightness(.25);
+    > div
+      background-color: $convo-color !important
+  ._5ys_:after
+    // Border around picture
+    -webkit-filter: brightness(0.55)
+  ._5w1r
+    text-shadow: none
+    -webkit-box-shadow: 0 1px 0 darken($convo-color, 15%) !important
+    background: none !important
+  // Recieved message
+  > div._1nc7 > div > div > div._5w1r
+    //, ._5wdf {
+    background-color: $recieved-color !important
+    &:before
+      background: none !important
+      background-color: $recieved-color !important
+    &:after
+      // content: none;
+      -webkit-filter: brightness(0.55)
+  // Sent message
+  > div._1nc6 > div > div > div._5w1r
+    //, ._5wdf {
+    background-color: $sent-color !important
+    &:before
+      background: none !important
+      background-color: $sent-color !important
+    &:after
+      // content: none;
+      -webkit-filter: brightness(0.55)
+
+// Textbox
+
+.fbNubFlyoutFooter, .uiTextareaAutogrow
+  background: none !important
+  background-color: $textbox-color !important
+  border: none !important
+  border-width: none !important
+  &:after
+    background-color: rgba(0, 0, 0, 0.5) !important
+
+._552n
+  // Wrapper around camera and emoticons
+  right: 0 !important
+  height: 27px !important
+
+.img[alt="Camera"]
+  -webkit-filter: brightness(0.3)
+
+.uiToggle.emoticonsPanel, ._552n
+  background: none !important
+  background-color: $textbox-color !important
+
+img.loading
+  -webkit-filter: grayscale(1) brightness(0.25)
+
+//********** Messages Menu *********
+div.jewelHeader, ul.jewelItemList, div.jewelFooter a
+  background-color: black !important
+
+.notifNegativeBase #fbMessagesFlyout .jewelContent a.messagesContent:hover
+  background-color: #222 !important
+
+//********** Notifications Menu *********
+.uiScrollableAreaContent > ul
+  // List
+  background-color: black !important
+
+._33c._4af a
+  background-color: lighten(black, 10%) !important
+
+._33c:hover a._33e
+  // Hover Items
+  background-color: lighten(black, 10%) !important
+
+//********** Buddie List *********
+.fbChatOrderedList
+  background: none !important
+  background-color: $buddie-color !important
+
+//********** Notification Popup *********
+ul._50d1 > li
+  background-color: $textbox-color !important
+  border: 1px solid darken($textbox-color, 10%) !important
+  &:hover
+    background-color: darken($textbox-color, 5%) !important
+    border: 1px solid darken($textbox-color, 15%) !important
+
+.uiCloseButton
+  -webkit-filter: grayscale(1) brightness(2)
+
+// Ticker
+.tickerActivityStories
+  background-color: black !important
+
+.fbSettingsListLink:hover
+  background-color: black !important
+
+//********** Timeline *********
+._70k, div.openToggler > a._9ry
+  // Top Nav
+  background-color: $bg-color !important
+
+._6-6:hover, div.openToggler > a._9ry:hover
+  background: none !important
+  background-color: lighten($bg-color, 10%) !important
+
+._54nf
+  background-color: $bg-color !important
+  a:hover
+    background-color: lighten($bg-color, 10%) !important
+
+.fbTimelineStickyHeader > div
+  > div.back
+    background-color: black !important
+  > div.name > span.uiButtonGroup
+    background-color: $bg-color !important
+    border-color: lighten($bg-color, 10%) !important
+    -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.3) !important
+
+.fbTimelineScrubber
+  // Date Sidebar
+  background: none !important
+  li a
+    border-left-color: #d3d7dc !important
+    border-left-color: lighten($bg-color, 10%) !important
+  .selected > a
+    border-left-color: #6a7480 !important
+    border-left-color: lighten($bg-color, 20%) !important
+
+#settings_usability_survey_root
+  background-color: lighten($bg-color, 5%) !important
+
+._6dh ._5142, .fbTimelineFeedbackActions, ul.UFIList, li.UFIRow, #pageFooter, ._5pcb > div
+  background-color: $bg-color !important
+
+.timelineUnitContainer
+  // Post Box
+  border-left: 1px solid grey !important
+  border-right: 1px solid red !important
+  .uiTextareaAutogrow
+    background-color: black !important
+
+div.composerTypeahead > div
+  // Surrounds Post Box
+  background-color: black !important
+
+._1dsp
+  // Share buttons
+  background-color: black !important
+  border-top-color: blue !important
+
+._1xz
+  // Shared Content
+  background: none !important
+  background-color: $bg-color !important
+
+._53ij
+  // Profile Card
+  background-color: black !important
+
+._572u
+  // Bottom bar of popup profile card
+  background-color: black !important
+
+.HovercardFollowButton > a, .HovercardMessagesButton
+  background: none !important
+  background-color: black !important
+
+.uiPopoverButton, .friendButton
+  /*background: none !important;
+   *background-color: black !important;
+   */
+  &.uiPopoverButtonWithChevron._52nd
+    //When in friend list menu but not hovering on button
+    background-image: none !important
+    background: green !important
+    border: 1px solid white !important
+  //   -webkit-filter: grayscale(1) brightness(.5);
