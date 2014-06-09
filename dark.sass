@@ -1,5 +1,4 @@
 $bg-color: #080808
-$bg-color: grey
 $titlebar-color: black
 $chat-titlebar-color: #333333
 $convo-color: grey
@@ -29,6 +28,14 @@ div#contentCol
   // This is breaking post pages. Pushes the post down for some reason
   // I don't remember why I did it in the first place
   // border-left: 1px solid #eee !important;
+
+
+
+
+
+
+
+
 
 //********** Conversations **********/
 // Idk
@@ -133,10 +140,10 @@ table.conversationContainer
   right: 0 !important
   height: 27px !important
 
-.img[alt="Camera"]
+.img[alt="Camera"], .UFICommentPhotoIcon
   -webkit-filter: brightness(0.3)
 
-.uiToggle.emoticonsPanel, ._552n
+.uiToggle.emoticonsPanel, ._552n, .UFIPhotoAttachLinkWrapper
   background: none !important
   background-color: $textbox-color !important
 
@@ -162,10 +169,21 @@ div.jewelHeader, ul.jewelItemList, div.jewelFooter a
   // Hover Items
   background-color: lighten(black, 10%) !important
 
+
+
+
+
+
 //********** Buddie List *********
 .fbChatOrderedList
   background: none !important
   background-color: $buddie-color !important
+
+
+
+
+
+
 
 //********** Notification Popup *********
 ul._50d1 > li
@@ -184,6 +202,17 @@ ul._50d1 > li
 
 .fbSettingsListLink:hover
   background-color: black !important
+
+
+
+
+
+
+
+
+
+
+
 
 //********** Timeline *********
 ._70k, div.openToggler > a._9ry
@@ -225,8 +254,9 @@ ul._50d1 > li
 
 .timelineUnitContainer
   // Post Box
-  border-left: 1px solid grey !important
-  border-right: 1px solid red !important
+  border-left: 1px solid black !important
+  border-right: 1px solid black !important
+  background-color: #111 !important
   .uiTextareaAutogrow
     background-color: black !important
 
@@ -239,10 +269,10 @@ div.composerTypeahead > div
   background-color: black !important
   border-top-color: blue !important
 
-._1xz
+._1xz, ._6m2
   // Shared Content
   background: none !important
-  background-color: $bg-color !important
+  background-color: lighten($bg-color, 5%) !important
 
 ._53ij
   // Profile Card
@@ -266,3 +296,10 @@ div.composerTypeahead > div
     background: green !important
     border: 1px solid white !important
   //   -webkit-filter: grayscale(1) brightness(.5);
+
+
+
+// Search box
+._585-
+  background: none !important
+  background-color: $bg-color !important
