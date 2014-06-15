@@ -336,12 +336,22 @@ ul._50d1 > li
 // Ticker
 .tickerActivityStories
   background-color: black !important
-#pagelet_sidebar ._5pr2 .fbFeedTicker .tickerStoryClickable:hover
+#pagelet_sidebar ._5pr2 .fbFeedTicker
   background: none !important
-  background-color: lighten(black, 10%) !important
+  .tickerStoryActive, .tickerStorySelected
+    background-color: lighten(black, 5%) !important
+  .tickerStoryClickable:hover
+    background-color: lighten(black, 10%) !important
 
 .fbSettingsListLink:hover
   background-color: black !important
+
+div.uiOverlayContent
+  background: none !important
+  background-color: black !important
+  ul.tickerDialogFooter
+    background: none !important
+    background-color: black !important
 
 
 
@@ -370,6 +380,10 @@ div._5h60.actionsDropdown
 ._70k, div.openToggler > a._9ry
   // Top Nav
   background-color: $bg-color !important
+  span._513x
+    // Indicator
+    display: none
+    -webkit-filter: brightness(.05)
 
 ._6-6:hover, div.openToggler > a._9ry:hover
   background: none !important

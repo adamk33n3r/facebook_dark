@@ -226,12 +226,22 @@ ul._50d1 > li {
 .tickerActivityStories {
   background-color: black !important; }
 
-#pagelet_sidebar ._5pr2 .fbFeedTicker .tickerStoryClickable:hover {
-  background: none !important;
-  background-color: #1a1a1a !important; }
+#pagelet_sidebar ._5pr2 .fbFeedTicker {
+  background: none !important; }
+  #pagelet_sidebar ._5pr2 .fbFeedTicker .tickerStoryActive, #pagelet_sidebar ._5pr2 .fbFeedTicker .tickerStorySelected {
+    background-color: #0d0d0d !important; }
+  #pagelet_sidebar ._5pr2 .fbFeedTicker .tickerStoryClickable:hover {
+    background-color: #1a1a1a !important; }
 
 .fbSettingsListLink:hover {
   background-color: black !important; }
+
+div.uiOverlayContent {
+  background: none !important;
+  background-color: black !important; }
+  div.uiOverlayContent ul.tickerDialogFooter {
+    background: none !important;
+    background-color: black !important; }
 
 a.profilePicThumb {
   background: rgba(255, 255, 255, 0.3) !important; }
@@ -244,6 +254,9 @@ div._5h60.actionsDropdown span {
 
 ._70k, div.openToggler > a._9ry {
   background-color: #080808 !important; }
+  ._70k span._513x, div.openToggler > a._9ry span._513x {
+    display: none;
+    -webkit-filter: brightness(0.05); }
 
 ._6-6:hover, div.openToggler > a._9ry:hover {
   background: none !important;
