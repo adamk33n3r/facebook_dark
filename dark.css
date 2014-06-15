@@ -115,6 +115,13 @@ div.jewelHeader, ul.jewelItemList, div.jewelFooter a {
 .notifNegativeBase #fbMessagesFlyout .jewelContent a.messagesContent:hover {
   background-color: #222222 !important; }
 
+ul._4kg {
+  background: none !important;
+  background-color: #080808 !important; }
+  ul._4kg._2tm > li:not(._kv):hover {
+    background: none !important;
+    background-color: #222222 !important; }
+
 .uiScrollableAreaContent > ul {
   background-color: black !important; }
 
