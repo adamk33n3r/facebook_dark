@@ -10,9 +10,6 @@ body {
   #blueBar:after {
     background: none !important; }
 
-div#mainContainer {
-  border-right: 1px solid #eeeeee !important; }
-
 div#contentCol {
   background: none !important;
   background-color: #080808 !important; }
@@ -189,6 +186,10 @@ div._1rs {
 ._33c:hover a._33e {
   background-color: #1a1a1a !important; }
 
+div.navigation {
+  background: none !important;
+  background-color: black !important; }
+
 div.fbChatSidebar {
   background: none !important;
   background-color: #080808 !important; }
@@ -297,5 +298,12 @@ div.composerTypeahead > div {
     border: 1px solid white !important; }
 
 ._585- {
+  background: none !important;
+  background-color: #080808 !important; }
+
+div.fbPhotoSnowlift .rhc {
+  background-color: black !important; }
+
+div._70l._51sh, div.pam {
   background: none !important;
   background-color: #080808 !important; }
