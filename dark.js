@@ -1,3 +1,4 @@
 $(function() {
-//    $(".cardRightCol").remove();
+    // Ads
+    //$("#rightCol").remove();
 });

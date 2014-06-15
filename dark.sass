@@ -191,15 +191,40 @@ div._ksg
 div._51xa
   // Container for "new message" and "actions"
   button, a
+    background: none !important
     background-color: black !important
     text-shadow: none !important
+a.pam.uiMorePagerPrimary
+  // Load Older Messages
+  background: none !important
   
 ul._4kg
   // Left list and messages
   background: none !important
   background-color: $bg-color !important
+  li._2n3
+    // Time splitter
+    border-top: 1px solid lighten($bg-color, 15%)
+    abbr
+      background: none !important
+
+  li._kv
+    // Selected message left
+    background: none !important
+    background-color: darken(#6d84b4, 30%) !important
+  li._kx
+    // Unread message left
+    background: none !important
+    background-color: lighten($bg-color, 5%) !important
+  .MercuryRepliedIndicator
+    // Icon for read message
+    -webkit-filter: invert(1)
+
   &._2tm > li:not(._kv):hover
     // Hovering over left list
+    background: none !important
+    background-color: lighten($bg-color, 10%) !important
+  li.unreadHighlight
     background: none !important
     background-color: lighten($bg-color, 10%) !important
   & + div
@@ -225,6 +250,9 @@ div._1rs //#js_26
     // Add files and photos buttons
     background: none !important
     background-color: $bg-color !important
+    a.uiButton:hover
+      background: none !important
+      background-color: lighten($bg-color, 10%) !important
 
 
 
@@ -251,9 +279,19 @@ div._1rs //#js_26
 
 
 //********** Buddie List *********
+div.fbChatSidebar
+  background: none !important
+  background-color: $bg-color !important
 .fbChatOrderedList
   background: none !important
   background-color: $buddie-color !important
+  a:hover
+    background-color: lighten(black, 10%) !important
+.fbSidebarGripper
+  background-color: black !important
+table._51mz._4oes tr._51mx
+  // Search textbox
+  background-color: $textbox-color !important
 
 
 
@@ -275,6 +313,9 @@ ul._50d1 > li
 // Ticker
 .tickerActivityStories
   background-color: black !important
+#pagelet_sidebar ._5pr2 .fbFeedTicker .tickerStoryClickable:hover
+  background: none !important
+  background-color: lighten(black, 10%) !important
 
 .fbSettingsListLink:hover
   background-color: black !important
