@@ -4,7 +4,7 @@ $chat-titlebar-color: #333333
 $convo-color: grey
 $recieved-color: #333333
 $sent-color: #444444
-$textbox-color: #555555
+$textbox-color: #333333
 $buddie-color: black
 
 *
@@ -74,10 +74,13 @@ div#contentCol
   -webkit-filter: grayscale(1) brightness(0.51)
 
 .fbNubButton
+  // Minimized chat
   background: none !important
   background-color: $chat-titlebar-color !important
   -webkit-background-clip: padding-box !important
   border-top: 1px solid rgba(51, 51, 51, 0.5) !important
+  div.name
+    text-shadow: none !important
 
 .fbNubButton
   &:before, &:after
@@ -150,6 +153,26 @@ table.conversationContainer
 img.loading
   -webkit-filter: grayscale(1) brightness(0.25)
 
+// Messages serach textbox
+div._3b
+  background: none !important
+  background-color: black !important
+  span.uiSearchInput._3c
+    background: none !important
+    background-color: $textbox-color !important
+    button
+      background-color: $textbox-color !important
+      //-webkit-filter: brightness(3.25)
+
+
+
+
+
+
+
+
+
+
 //********** Messages Menu *********
 div.jewelHeader, ul.jewelItemList, div.jewelFooter a
   background-color: black !important
@@ -157,13 +180,51 @@ div.jewelHeader, ul.jewelItemList, div.jewelFooter a
 .notifNegativeBase #fbMessagesFlyout .jewelContent a.messagesContent:hover
   background-color: #222 !important
 
+
+
+
 //********** Messages **********
+div._ksg
+  // Main messages container
+  background: none !important
+  background-color: black !important
+div._51xa
+  // Container for "new message" and "actions"
+  button, a
+    background-color: black !important
+    text-shadow: none !important
+  
 ul._4kg
+  // Left list and messages
   background: none !important
   background-color: $bg-color !important
   &._2tm > li:not(._kv):hover
+    // Hovering over left list
     background: none !important
     background-color: lighten($bg-color, 10%) !important
+  & + div
+    // Assuming this is where "is typing" goes
+    // Also shows when "seen"
+    background: none !important
+    background-color: $bg-color !important
+
+div._1rs //#js_26
+  // Message box background
+  background: none !important
+  background-color: black !important
+  div._2pt
+    // Message textbox border
+    background: none !important
+    background-color: $textbox-color !important
+    div.uiToggle.emoticonsPanel
+      background: none !important
+      i.emoteTogglerImg
+        -webkit-filter: grayscale(1) brightness(0.20)
+
+  div._1rw
+    // Add files and photos buttons
+    background: none !important
+    background-color: $bg-color !important
 
 
 

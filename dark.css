@@ -52,6 +52,8 @@ div#contentCol {
   background-color: #333333 !important;
   -webkit-background-clip: padding-box !important;
   border-top: 1px solid rgba(51, 51, 51, 0.5) !important; }
+  .fbNubButton div.name {
+    text-shadow: none !important; }
 
 .fbNubButton:before, .fbNubButton:after {
   -webkit-filter: grayscale(1) brightness(0.21); }
@@ -89,7 +91,7 @@ table.conversationContainer {
 
 .fbNubFlyoutFooter, .uiTextareaAutogrow {
   background: none !important;
-  background-color: #555555 !important;
+  background-color: #333333 !important;
   border: none !important;
   border-width: none !important; }
   .fbNubFlyoutFooter:after, .uiTextareaAutogrow:after {
@@ -104,10 +106,19 @@ table.conversationContainer {
 
 .uiToggle.emoticonsPanel, ._552n, .UFIPhotoAttachLinkWrapper {
   background: none !important;
-  background-color: #555555 !important; }
+  background-color: #333333 !important; }
 
 img.loading {
   -webkit-filter: grayscale(1) brightness(0.25); }
+
+div._3b {
+  background: none !important;
+  background-color: black !important; }
+  div._3b span.uiSearchInput._3c {
+    background: none !important;
+    background-color: #333333 !important; }
+    div._3b span.uiSearchInput._3c button {
+      background-color: #333333 !important; }
 
 div.jewelHeader, ul.jewelItemList, div.jewelFooter a {
   background-color: black !important; }
@@ -115,12 +126,37 @@ div.jewelHeader, ul.jewelItemList, div.jewelFooter a {
 .notifNegativeBase #fbMessagesFlyout .jewelContent a.messagesContent:hover {
   background-color: #222222 !important; }
 
+div._ksg {
+  background: none !important;
+  background-color: black !important; }
+
+div._51xa button, div._51xa a {
+  background-color: black !important;
+  text-shadow: none !important; }
+
 ul._4kg {
   background: none !important;
   background-color: #080808 !important; }
   ul._4kg._2tm > li:not(._kv):hover {
     background: none !important;
     background-color: #222222 !important; }
+  ul._4kg + div {
+    background: none !important;
+    background-color: #080808 !important; }
+
+div._1rs {
+  background: none !important;
+  background-color: black !important; }
+  div._1rs div._2pt {
+    background: none !important;
+    background-color: #333333 !important; }
+    div._1rs div._2pt div.uiToggle.emoticonsPanel {
+      background: none !important; }
+      div._1rs div._2pt div.uiToggle.emoticonsPanel i.emoteTogglerImg {
+        -webkit-filter: grayscale(1) brightness(0.2); }
+  div._1rs div._1rw {
+    background: none !important;
+    background-color: #080808 !important; }
 
 .uiScrollableAreaContent > ul {
   background-color: black !important; }
@@ -136,11 +172,11 @@ ul._4kg {
   background-color: black !important; }
 
 ul._50d1 > li {
-  background-color: #555555 !important;
-  border: 1px solid #3b3b3b !important; }
+  background-color: #333333 !important;
+  border: 1px solid #1a1a1a !important; }
   ul._50d1 > li:hover {
-    background-color: #484848 !important;
-    border: 1px solid #2f2f2f !important; }
+    background-color: #262626 !important;
+    border: 1px solid #0d0d0d !important; }
 
 .uiCloseButton {
   -webkit-filter: grayscale(1) brightness(2); }
