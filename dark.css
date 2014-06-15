@@ -27,6 +27,10 @@ div#contentCol {
 ._5q5b ._50mz.highlightTitle .fbNubFlyoutTitlebar {
   background-color: #4d4d4d !important; }
 
+div.uiMenu {
+  background-color: #080808 !important;
+  border-bottom: none !important; }
+
 .fbNubFlyoutHeader > div {
   background-color: #444444 !important; }
   .fbNubFlyoutHeader > div > div {
@@ -57,19 +61,19 @@ div#contentCol {
 
 table.conversationContainer {
   background: none !important;
-  background-color: gray !important; }
+  background-color: #555555 !important; }
 
 ._51lq a.profileLink:after {
-  -webkit-filter: brightness(0.55);
+  -webkit-filter: brightness(0.35);
   border-radius: 3px; }
 
 .conversation > div > div._5w-5 > div {
-  background-color: gray !important; }
+  background-color: #555555 !important; }
 .conversation > div ._5ys_:after {
-  -webkit-filter: brightness(0.55); }
+  -webkit-filter: brightness(0.35); }
 .conversation > div ._5w1r {
   text-shadow: none;
-  -webkit-box-shadow: 0 1px 0 #5a5a5a !important;
+  -webkit-box-shadow: 0 1px 0 #2f2f2f !important;
   background: none !important; }
 .conversation > div > div._1nc7 > div > div > div._5w1r {
   background-color: #333333 !important; }
@@ -77,18 +81,18 @@ table.conversationContainer {
     background: none !important;
     background-color: #333333 !important; }
   .conversation > div > div._1nc7 > div > div > div._5w1r:after {
-    -webkit-filter: brightness(0.55); }
+    -webkit-filter: brightness(0.35); }
 .conversation > div > div._1nc6 > div > div > div._5w1r {
   background-color: #444444 !important; }
   .conversation > div > div._1nc6 > div > div > div._5w1r:before {
     background: none !important;
     background-color: #444444 !important; }
   .conversation > div > div._1nc6 > div > div > div._5w1r:after {
-    -webkit-filter: brightness(0.55); }
+    -webkit-filter: brightness(0.35); }
 
 .fbNubFlyoutFooter, .uiTextareaAutogrow {
   background: none !important;
-  background-color: #333333 !important;
+  background-color: #444444 !important;
   border: none !important;
   border-width: none !important; }
   .fbNubFlyoutFooter:after, .uiTextareaAutogrow:after {
@@ -103,7 +107,10 @@ table.conversationContainer {
 
 .uiToggle.emoticonsPanel, ._552n, .UFIPhotoAttachLinkWrapper {
   background: none !important;
-  background-color: #333333 !important; }
+  background-color: #444444 !important; }
+
+div.chatAttachmentShelf {
+  border-top: none !important; }
 
 img.loading {
   -webkit-filter: grayscale(1) brightness(0.25); }
@@ -113,9 +120,9 @@ div._3b {
   background-color: black !important; }
   div._3b span.uiSearchInput._3c {
     background: none !important;
-    background-color: #333333 !important; }
+    background-color: #444444 !important; }
     div._3b span.uiSearchInput._3c button {
-      background-color: #333333 !important; }
+      background-color: #444444 !important; }
 
 div.jewelHeader, ul.jewelItemList, div.jewelFooter a {
   background-color: black !important; }
@@ -135,28 +142,28 @@ div._51xa button, div._51xa a {
 a.pam.uiMorePagerPrimary {
   background: none !important; }
 
-ul._4kg {
+ul._4kg:not(.uiList) {
   background: none !important;
   background-color: #080808 !important; }
-  ul._4kg li._2n3 {
+  ul._4kg:not(.uiList) li._2n3 {
     border-top: 1px solid #2e2e2e; }
-    ul._4kg li._2n3 abbr {
+    ul._4kg:not(.uiList) li._2n3 abbr {
       background: none !important; }
-  ul._4kg li._kv {
+  ul._4kg:not(.uiList) li._kv {
     background: none !important;
     background-color: #2e3c5a !important; }
-  ul._4kg li._kx {
+  ul._4kg:not(.uiList) li._kx {
     background: none !important;
     background-color: #151515 !important; }
-  ul._4kg .MercuryRepliedIndicator {
+  ul._4kg:not(.uiList) .MercuryRepliedIndicator {
     -webkit-filter: invert(1); }
-  ul._4kg._2tm > li:not(._kv):hover {
+  ul._4kg:not(.uiList)._2tm > li:not(._kv):hover {
     background: none !important;
     background-color: #222222 !important; }
-  ul._4kg li.unreadHighlight {
+  ul._4kg:not(.uiList) li.unreadHighlight {
     background: none !important;
     background-color: #222222 !important; }
-  ul._4kg + div {
+  ul._4kg:not(.uiList) + div {
     background: none !important;
     background-color: #080808 !important; }
 
@@ -165,7 +172,7 @@ div._1rs {
   background-color: black !important; }
   div._1rs div._2pt {
     background: none !important;
-    background-color: #333333 !important; }
+    background-color: #444444 !important; }
     div._1rs div._2pt div.uiToggle.emoticonsPanel {
       background: none !important; }
       div._1rs div._2pt div.uiToggle.emoticonsPanel i.emoteTogglerImg {
@@ -204,14 +211,14 @@ div.fbChatSidebar {
   background-color: black !important; }
 
 table._51mz._4oes tr._51mx {
-  background-color: #333333 !important; }
+  background-color: #444444 !important; }
 
 ul._50d1 > li {
-  background-color: #333333 !important;
-  border: 1px solid #1a1a1a !important; }
+  background-color: #444444 !important;
+  border: 1px solid #2b2b2b !important; }
   ul._50d1 > li:hover {
-    background-color: #262626 !important;
-    border: 1px solid #0d0d0d !important; }
+    background-color: #373737 !important;
+    border: 1px solid #1e1e1e !important; }
 
 .uiCloseButton {
   -webkit-filter: grayscale(1) brightness(2); }
@@ -225,6 +232,15 @@ ul._50d1 > li {
 
 .fbSettingsListLink:hover {
   background-color: black !important; }
+
+a.profilePicThumb {
+  background: rgba(255, 255, 255, 0.3) !important; }
+  a.profilePicThumb img.profilePic {
+    background-color: none !important;
+    border: 4px solid #080808 !important; }
+
+div._5h60.actionsDropdown span {
+  background-color: #080808 !important; }
 
 ._70k, div.openToggler > a._9ry {
   background-color: #080808 !important; }
@@ -260,12 +276,20 @@ ul._50d1 > li {
 ._6dh ._5142, .fbTimelineFeedbackActions, ul.UFIList, li.UFIRow, #pageFooter, ._5pcb > div {
   background-color: #080808 !important; }
 
-.timelineUnitContainer {
+li.fbTimelineUnit div.topBorder {
+  -webkit-filter: brightness(0); }
+li.fbTimelineUnit .timelineUnitContainer {
   border-left: 1px solid black !important;
   border-right: 1px solid black !important;
   background-color: #111111 !important; }
-  .timelineUnitContainer .uiTextareaAutogrow {
-    background-color: black !important; }
+  li.fbTimelineUnit .timelineUnitContainer a:after {
+    -webkit-filter: brightness(0.25); }
+li.fbTimelineUnit div.fbTimelineUFI {
+  background: none !important; }
+li.fbTimelineUnit div.fbTimelineFeedbackActions {
+  border-top: 1px solid gray !important; }
+li.fbTimelineUnit div.bottomBorder {
+  -webkit-filter: brightness(0); }
 
 div.composerTypeahead > div {
   background-color: black !important; }
@@ -280,6 +304,14 @@ div.composerTypeahead > div {
 
 ._53ij {
   background-color: black !important; }
+  ._53ij div.uiMenu {
+    background-color: black !important; }
+
+a.itemAnchor {
+  border: none !important; }
+
+._7lt ._7lw {
+  border: 3px solid #2e2e2e !important; }
 
 ._572u {
   background-color: black !important; }
@@ -292,9 +324,12 @@ div.composerTypeahead > div {
   /*background: none !important;
    *background-color: black !important;
    */ }
+  .uiPopoverButton.uiPopoverButtonWithChevron, .friendButton.uiPopoverButtonWithChevron {
+    background: black !important;
+    background-position: right -251px !important; }
   .uiPopoverButton.uiPopoverButtonWithChevron._52nd, .friendButton.uiPopoverButtonWithChevron._52nd {
     background-image: none !important;
-    background: green !important;
+    background: black !important;
     border: 1px solid white !important; }
 
 ._585- {

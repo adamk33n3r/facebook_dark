@@ -1,10 +1,10 @@
 $bg-color: #080808
 $titlebar-color: black
 $chat-titlebar-color: #333333
-$convo-color: grey
+$convo-color: #555555
 $recieved-color: #333333
 $sent-color: #444444
-$textbox-color: #333333
+$textbox-color: #444444
 $buddie-color: black
 
 *
@@ -43,20 +43,25 @@ div#contentCol
 .fbNubFlyoutInner
   background: none !important
 
-// Chat title
 ._5q5b .fbNubFlyoutTitlebar
+  // Chat title
   background: none !important
   background-color: $chat-titlebar-color !important
   border: 1px solid darken($chat-titlebar-color, 10%) !important
   &:hover
     background-color: darken($chat-titlebar-color, 5%) !important
 
-// Chat title when flashing
 ._5q5b ._50mz.highlightTitle .fbNubFlyoutTitlebar
+  // Chat title when flashing
   background-color: lighten($chat-titlebar-color, 10%) !important
 
-// Scroll down for new message 
+div.uiMenu
+  // Settings button list
+  background-color: $bg-color !important
+  border-bottom: none !important
+
 .fbNubFlyoutHeader > div
+  // Scroll down for new message 
   background-color: #444 !important
   > div
     background-color: #444 !important
@@ -93,7 +98,7 @@ table.conversationContainer
 
 ._51lq a.profileLink:after
   // Typing profile pic
-  -webkit-filter: brightness(0.55)
+  -webkit-filter: brightness(0.35)
   border-radius: 3px
 
 .conversation > div
@@ -103,33 +108,31 @@ table.conversationContainer
       background-color: $convo-color !important
   ._5ys_:after
     // Border around picture
-    -webkit-filter: brightness(0.55)
+    -webkit-filter: brightness(0.35)
   ._5w1r
     text-shadow: none
     -webkit-box-shadow: 0 1px 0 darken($convo-color, 15%) !important
     background: none !important
-  // Recieved message
   > div._1nc7 > div > div > div._5w1r
-    //, ._5wdf {
+    // Recieved message
     background-color: $recieved-color !important
     &:before
       background: none !important
       background-color: $recieved-color !important
     &:after
       // content: none;
-      -webkit-filter: brightness(0.55)
-  // Sent message
+      -webkit-filter: brightness(0.35)
   > div._1nc6 > div > div > div._5w1r
-    //, ._5wdf {
+    // Sent message
     background-color: $sent-color !important
     &:before
       background: none !important
       background-color: $sent-color !important
     &:after
       // content: none;
-      -webkit-filter: brightness(0.55)
+      -webkit-filter: brightness(0.35)
 
-// Textbox
+//********** Converstaion Textbox **********
 
 .fbNubFlyoutFooter, .uiTextareaAutogrow
   background: none !important
@@ -151,10 +154,24 @@ table.conversationContainer
   background: none !important
   background-color: $textbox-color !important
 
+div.chatAttachmentShelf
+  border-top: none !important
+
 img.loading
   -webkit-filter: grayscale(1) brightness(0.25)
 
-// Messages serach textbox
+
+
+
+
+
+
+
+
+
+
+
+// Messages search textbox
 div._3b
   background: none !important
   background-color: black !important
@@ -199,7 +216,7 @@ a.pam.uiMorePagerPrimary
   // Load Older Messages
   background: none !important
   
-ul._4kg
+ul._4kg:not(.uiList) // .uiList prevents School on profile card from getting background
   // Left list and messages
   background: none !important
   background-color: $bg-color !important
@@ -338,6 +355,18 @@ ul._50d1 > li
 
 
 //********** Timeline *********
+a.profilePicThumb
+  // Profile picture
+  background: rgba(255,255,255,.3) !important
+  img.profilePic
+    background-color: none !important
+    border: 4px solid $bg-color !important
+
+div._5h60.actionsDropdown
+  span
+    // Add friend, message, etc buttons
+    background-color: $bg-color !important
+
 ._70k, div.openToggler > a._9ry
   // Top Nav
   background-color: $bg-color !important
@@ -375,13 +404,27 @@ ul._50d1 > li
 ._6dh ._5142, .fbTimelineFeedbackActions, ul.UFIList, li.UFIRow, #pageFooter, ._5pcb > div
   background-color: $bg-color !important
 
-.timelineUnitContainer
-  // Post Box
-  border-left: 1px solid black !important
-  border-right: 1px solid black !important
-  background-color: #111 !important
-  .uiTextareaAutogrow
-    background-color: black !important
+li.fbTimelineUnit
+  div.topBorder
+    -webkit-filter: brightness(0)
+  .timelineUnitContainer
+    // Post Box
+    border-left: 1px solid black !important
+    border-right: 1px solid black !important
+    background-color: #111 !important
+    a:after
+      // Picture border
+      -webkit-filter: brightness(.25)
+    //.uiTextareaAutogrow
+    //  background-color: black !important
+  div.fbTimelineUFI //.uiCommentContainer.fbTimelineUFIEmpty
+    // Space above the bottom of post box
+    background: none !important
+  div.fbTimelineFeedbackActions
+    // Border above like, comment, and share buttons
+    border-top: 1px solid grey !important
+  div.bottomBorder
+    -webkit-filter: brightness(0)
 
 div.composerTypeahead > div
   // Surrounds Post Box
@@ -397,9 +440,24 @@ div.composerTypeahead > div
   background: none !important
   background-color: lighten($bg-color, 5%) !important
 
+
+
+
+
+
+
+//********** Profile Card **********
 ._53ij
   // Profile Card
   background-color: black !important
+  div.uiMenu
+    background-color: black !important
+a.itemAnchor
+  border: none !important
+//uiMenuSeparator border-bottom ddd
+
+._7lt ._7lw
+  border: 3px solid lighten($bg-color, 15%) !important
 
 ._572u
   // Bottom bar of popup profile card
@@ -413,14 +471,15 @@ div.composerTypeahead > div
   /*background: none !important;
    *background-color: black !important;
    */
+  &.uiPopoverButtonWithChevron
+    background: black !important
+    background-position: right -251px !important
   &.uiPopoverButtonWithChevron._52nd
     //When in friend list menu but not hovering on button
     background-image: none !important
-    background: green !important
+    background: black !important
     border: 1px solid white !important
   //   -webkit-filter: grayscale(1) brightness(.5);
-
-
 
 // Search box
 ._585-
